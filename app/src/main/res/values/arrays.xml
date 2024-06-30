@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>Назар</item>
+        <item>Назар</item>
+        <item>Назар</item>
+        <item>Лера</item>
+        <item>Лера</item>
+        <item>Лера</item>
+        <item>Максим</item>
+        <item>Максим</item>
+        <item>Максим</item>
+        <item>Ирина</item>
+        <item>Ирина</item>
+        <item>Ирина</item>
+    </string-array>
+</resources>

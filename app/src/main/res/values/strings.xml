@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Arsee</string>
+    <string name="login">Имя (Логин)</string>
+    <string name="password">Пароль</string>
+    <string name="pov_password">Повторит пароль</string>
+    <string name="gmail">Электроная почта (gmail)</string>
+    <string name="register">Регистрация</string>
+    <string name="accaunt">Вход</string>
+    <string name="authorization">Авторизация по почте (gmail)</string>
+    <string name="setting">Настройки</string>
+    <string name="home">Главная</string>
+    <string name="message">Сообщение</string>
+    <string name="pay">Баланс</string>
+    <string name="games">Игры</string>
+    <string name="steeme">Эфир</string>
+    <string name="categori">Категории</string>
+    <string name="foto_profile">Фото профиля</string>
+    <string name="clouse">Выход</string>
+    <string name="namePerson">Абдуназаров Неъматулло Баходурович</string>
+    <string name="Balanc">10 руб</string>
+    <string name="schyte">Баланс: </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="pay_visit">Номер карты...</string>
+    <string name="svv">SVV</string>
+    <string name="Data_pay">Дата</string>
+    <string name="save">Сохранить</string>
+    <string name="summa">Сумма...</string>
+    <string name="successful_payment">Платеж успешно выполнен. ID платежа: %1$s</string>
+    <string name="payment_successful_message">Оплата прошла успешно ✅</string>
+    <string name="error_payment_failed">Платеж не выполнен или произошла ошибка.</string>
+    <string name="error_invalid_card_number">Неправильно указан номер карты</string>
+</resources>

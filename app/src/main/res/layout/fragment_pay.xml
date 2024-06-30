@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FragmentPay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_app"
+    tools:context=".PayFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="@string/pay_visit"
+            android:background="@drawable/edit_input_style"
+            android:ems="10"
+            android:hint="@string/pay_visit"
+            android:inputType="number"
+            android:maxLength="16"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/hinit"
+            android:textColorHint="@color/hinit"
+            app:layout_constraintBottom_toTopOf="@+id/cvv_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.57" />
+
+        <EditText
+            android:id="@+id/cvv_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_input_style"
+            android:ems="10"
+            android:hint="@string/svv"
+            android:inputType="datetime"
+            android:maxLength="3"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/hinit"
+            android:textColorHint="@color/hinit"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/data_cart_number"
+            app:layout_constraintStart_toStartOf="@+id/card_number" />
+
+        <EditText
+            android:id="@+id/data_cart_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_input_style"
+            android:ems="10"
+            android:hint="@string/Data_pay"
+            android:inputType="datetime|date"
+            android:maxLength="5"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/hinit"
+            android:textColorHint="@color/hinit"
+            app:layout_constraintBottom_toBottomOf="@+id/cvv_number"
+            app:layout_constraintEnd_toEndOf="@+id/card_number"
+            app:layout_constraintTop_toTopOf="@+id/cvv_number"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnPopolnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Пополнить"
+            app:layout_constraintBottom_toBottomOf="@+id/btnVivesty"
+            app:layout_constraintStart_toStartOf="@+id/cvv_number"
+            app:layout_constraintTop_toTopOf="@+id/btnVivesty"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnVivesty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Вывести"
+            app:layout_constraintEnd_toEndOf="@+id/data_cart_number"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+        <EditText
+            android:id="@+id/editTextText9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_input_style"
+            android:ems="10"
+            android:hint="@string/summa"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/hinit"
+            android:textColorHint="@color/hinit"
+            app:layout_constraintEnd_toEndOf="@+id/data_cart_number"
+            app:layout_constraintStart_toStartOf="@+id/cvv_number"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/error"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/data_cart_number"
+            app:layout_constraintEnd_toEndOf="@+id/card_number"
+            app:layout_constraintStart_toStartOf="@+id/card_number"
+            app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#00FF0A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/btnVivesty"
+            app:layout_constraintStart_toStartOf="@+id/btnPopolnit"
+            app:layout_constraintTop_toBottomOf="@+id/btnVivesty" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
